@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+          tailwind.config = {
+               theme: {
+                    extend: {
+                         colors: {
+                              main: 'rgb(107 114 128);',
+                         },
+                    }
+               }
+          }
+          
+     </script>
+     <title>audiodeck</title>
+</head>
+<body class="flex min-h-screen justify-center items-center shadow-lg">
+     <main class="grid grid-cols-4 grid-rows-4 gap-1 bg-gray-300 p-2 rounded-lg">
+
+          <button class="bg-blue-600 w-24 h-24 rounded-lg shadow-lg tecla tecla_bass"><h1>0</h1></button>
+          <button class="bg-pink-600 w-24 h-24 rounded-lg shadow-lg tecla tecla_1"><h1>/</h1></button>
+          <button class="bg-yellow-600 w-24 h-24 rounded-lg shadow-lg tecla tecla_2"><h1>*</h1></button>
+          <button class="bg-purple-600 w-24 h-24 rounded-lg shadow-lg tecla tecla_3"><h1>-</h1></button>
+          
+          <button class="bg-blue-500 w-24 h-24 rounded-lg shadow-lg tecla tecla_4"><h1>7</h1></button>
+          <button class="bg-pink-500 w-24 h-24 rounded-lg shadow-lg tecla tecla_5"><h1>8</h1></button>
+          <button class="bg-yellow-500 w-24 h-24 rounded-lg shadow-lg tecla tecla_6"><h1>9</h1></button>
+          <button class="bg-purple-500 w-24 h-24 rounded-lg shadow-lg tecla tecla_7"><h1>+</h1></button>
+          
+          <button class="bg-blue-400 w-24 h-24 rounded-lg shadow-lg tecla tecla_8"><h1>4</h1></button>
+          <button class="bg-pink-400 w-24 h-24 rounded-lg shadow-lg tecla tecla_9"><h1>5</h1></button>
+          <button class="bg-yellow-400 w-24 h-24 rounded-lg shadow-lg tecla tecla_a"><h1>6</h1></button>
+          <button class="bg-purple-400 w-24 h-24 rounded-lg shadow-lg tecla tecla_b"><h1>.</h1></button>
+          
+          <button class="bg-blue-300 w-24 h-24 rounded-lg shadow-lg tecla tecla_c"><h1>1</h1></button>
+          <button class="bg-pink-300 w-24 h-24 rounded-lg shadow-lg tecla tecla_d"><h1>2</h1></button>
+          <button class="bg-yellow-300 w-24 h-24 rounded-lg shadow-lg tecla tecla_e"><h1>3</h1></button>
+          <button class="bg-purple-300 w-24 h-24 rounded-lg shadow-lg tecla tecla_f"><h1>,</h1></button>
+
+     </main>
+     <audio src="audio/90_Fm_Bass_SP_150_01.wav" id="som_tecla_bass"></audio>
+     <audio src="audio/95_C#m_ElecBass_02_575.wav" id="som_tecla_1"></audio>
+     <audio src="audio/106_Fm_PrcFMBss_SP_145_01.wav" id="som_tecla_2"></audio>
+     <audio src="audio/115_CFG_8Bar_174_SP01.wav" id="som_tecla_3"></audio>
+     <audio src="audio/115_Gm_Fretless_174_SP02.wav" id="som_tecla_4"></audio>
+     <audio src="audio/120_A_Finger_174_SP02.wav" id="som_tecla_5"></audio>
+     <audio src="audio/120_Am_BowedBass_SP_47_03.wav" id="som_tecla_6"></audio>
+     <audio src="audio/125_D_Slap_174_SP01.wav" id="som_tecla_7"></audio>
+     <audio src="audio/127_Bassloop_22_133_SP.wav" id="som_tecla_8"></audio>
+     <audio src="audio/140_Fm_Bless_02_211_SP.wav" id="som_tecla_9"></audio>
+     <audio src="audio/150_Fm_Bass_02_65_SP.wav" id="som_tecla_a"></audio>
+     <audio src="audio/150_Fm_Bass_03_65_SP.wav" id="som_tecla_b"></audio>
+     <audio src="audio/155_Cm_Bass_06_65_SP.wav" id="som_tecla_c"></audio>
+     <audio src="audio/127_Bassloop_22_133_SP.wav" id="som_tecla_d"></audio>
+     <audio src="audio/125_D_Slap_174_SP01.wav" id="som_tecla_e"></audio>
+     <audio src="audio/127_Bassloop_22_133_SP.wav" id="som_tecla_f"></audio>
+
+     <script src="index.js"></script>     
+</body>
+</html>
